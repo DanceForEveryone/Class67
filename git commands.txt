@@ -1,0 +1,275 @@
+AKR's@AKR-PC MINGW64 ~
+$ pwd
+/c/Users/ADMIN
+
+AKR's@AKR-PC MINGW64 ~
+$ ls
+'3D Objects'/         Documents/        'My Documents'@                                                                                 NetHood@        Searches/
+ AppData/             Downloads/         NSS/                                                                                           OneDrive/       SendTo@
+'Application Data'@   Favorites/         NTUSER.DAT                                                                                     Pictures/      'Start Menu'@
+ Contacts/            Links/             NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf                                        PrintHood@      Templates@
+ Cookies@            'Local Settings'@   NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms   Recent@         Videos/
+ Desktop/             Music/             NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms  'Saved Games'/   ntuser.dat.LOG1
+
+AKR's@AKR-PC MINGW64 ~
+$ cd..
+bash: cd..: command not found
+
+AKR's@AKR-PC MINGW64 ~
+$ cd
+
+AKR's@AKR-PC MINGW64 ~
+$ pwd
+/c/Users/ADMIN
+
+AKR's@AKR-PC MINGW64 ~
+$ cd C:\WhiteHatJr
+
+AKR's@AKR-PC MINGW64 /c/WhiteHatJr
+$ pwd
+/c/WhiteHatJr
+
+AKR's@AKR-PC MINGW64 /c/WhiteHatJr
+$ mkdir class67
+
+AKR's@AKR-PC MINGW64 /c/WhiteHatJr
+$ cd class67
+
+AKR's@AKR-PC MINGW64 /c/WhiteHatJr/class67
+$ git init
+Initialized empty Git repository in C:/WhiteHatJr/class67/.git/
+
+AKR's@AKR-PC MINGW64 /c/WhiteHatJr/class67 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        characters.txt
+        readme.md
+        story.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+AKR's@AKR-PC MINGW64 /c/WhiteHatJr/class67 (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+AKR's@AKR-PC MINGW64 /c/WhiteHatJr/class67 (master)
+$ git add characters.txt
+
+AKR's@AKR-PC MINGW64 /c/WhiteHatJr/class67 (master)
+$ git add readme.md
+
+AKR's@AKR-PC MINGW64 /c/WhiteHatJr/class67 (master)
+$ git add story.txt
+
+AKR's@AKR-PC MINGW64 /c/WhiteHatJr/class67 (master)
+$ git commit -m "my first commit"
+[master (root-commit) 4ba57df] my first commit
+ 3 files changed, 38 insertions(+)
+ create mode 100644 characters.txt
+ create mode 100644 readme.md
+ create mode 100644 story.txt
+
+AKR's@AKR-PC MINGW64 /c/WhiteHatJr/class67 (master)
+$ git log
+commit 4ba57dfcf13a019205a560b6977f31e02999394e (HEAD -> master)
+Author: DanceForEveryone <ashmitarakshit@22.gmail.com>
+Date:   Thu Apr 22 16:42:30 2021 +0530
+
+    my first commit
+
+AKR's@AKR-PC MINGW64 /c/WhiteHatJr/class67 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   story.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+AKR's@AKR-PC MINGW64 /c/WhiteHatJr/class67 (master)
+$ git add story.txt
+
+AKR's@AKR-PC MINGW64 /c/WhiteHatJr/class67 (master)
+$ git commit -m "my second commit"
+[master 3a16337] my second commit
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+AKR's@AKR-PC MINGW64 /c/WhiteHatJr/class67 (master)
+$ git log
+commit 3a16337ae585cbaf475e069007ac164a6818b290 (HEAD -> master)
+Author: DanceForEveryone <ashmitarakshit@22.gmail.com>
+Date:   Thu Apr 22 16:45:33 2021 +0530
+
+    my second commit
+
+commit 4ba57dfcf13a019205a560b6977f31e02999394e
+Author: DanceForEveryone <ashmitarakshit@22.gmail.com>
+Date:   Thu Apr 22 16:42:30 2021 +0530
+
+    my first commit
+
+AKR's@AKR-PC MINGW64 /c/WhiteHatJr/class67 (master)
+$ git checkout 4ba57
+Note: switching to '4ba57'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 4ba57df my first commit
+
+AKR's@AKR-PC MINGW64 /c/WhiteHatJr/class67 ((4ba57df...))
+$ git checkout 3a163
+Previous HEAD position was 4ba57df my first commit
+HEAD is now at 3a16337 my second commit
+
+AKR's@AKR-PC MINGW64 /c/WhiteHatJr/class67 ((3a16337...))
+$ git status
+HEAD detached at 3a16337
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   story.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+AKR's@AKR-PC MINGW64 /c/WhiteHatJr/class67 ((3a16337...))
+$ git add story.txt
+
+AKR's@AKR-PC MINGW64 /c/WhiteHatJr/class67 ((3a16337...))
+$ git diff --staged
+diff --git a/story.txt b/story.txt
+index 036f34d..d341d7a 100644
+--- a/story.txt
++++ b/story.txt
+@@ -1,3 +1,5 @@
+ Once upon a time, a clever monkey lived in a tree that bore juicy, red rose apples. He was very happy. One fine day, a crocodile swam up to that tree and told the monkey that he had traveled a long distance and was in search of food as he was very hungry. The kind monkey offered him a few rose apples. The crocodile enjoyed them very much and asked the monkey whether he could come again for some more fruit. The generous monkey happily agreed.
+
+-The crocodile returned the next day. And the next. And the next one after that. Soon the two became very good friends. They discussed their lives, their friends and family, like all friends do. The crocodile told the monkey that he had a wife and that they lived on the other side of the river. So the kind monkey offered him some extra rose apples to take home to his wife. The crocodile’s wife loved the rose apples and made her husband promise to get her some every day.
+\ No newline at end of file
++The crocodile returned the next day. And the next. And the next one after that. Soon the two became very good friends. They discussed their lives, their friends and family, like all friends do. The crocodile told the monkey that he had a wife and that they lived on the other side of the river. So the kind monkey offered him some extra rose apples to take home to his wife. The crocodile’s wife loved the rose apples and made her husband promise to get her some every day.
++
++Meanwhile, the friendship between the monkey and the crocodile deepened as they spent more and more time together. The crocodile’s wife started getting jealous. She wanted to put an end to this friendship. So she pretended that she could not believe that her husband could be friends with a monkey. Her husband tried to convince her that he and the monkey shared a true friendship. The crocodile’s wife thought to herself that if the monkey lived on a diet of rose monkeys, his flesh would be very sweet. So she asked the crocodile to invite the monkey to their house.
+\ No newline at end of file
+
+AKR's@AKR-PC MINGW64 /c/WhiteHatJr/class67 ((3a16337...))
+$ git branch
+* (HEAD detached at 3a16337)
+  master
+
+AKR's@AKR-PC MINGW64 /c/WhiteHatJr/class67 ((3a16337...))
+$ git branch myBranch
+
+AKR's@AKR-PC MINGW64 /c/WhiteHatJr/class67 ((3a16337...))
+$ git checkout myBranch
+Switched to branch 'myBranch'
+M       story.txt
+
+AKR's@AKR-PC MINGW64 /c/WhiteHatJr/class67 (myBranch)
+$ git status
+On branch myBranch
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   story.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   story.txt
+
+
+AKR's@AKR-PC MINGW64 /c/WhiteHatJr/class67 (myBranch)
+$ git add story.txt
+
+AKR's@AKR-PC MINGW64 /c/WhiteHatJr/class67 (myBranch)
+$ git commit -m "my first commit at myBranch"
+[myBranch 4985b64] my first commit at myBranch
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+AKR's@AKR-PC MINGW64 /c/WhiteHatJr/class67 (myBranch)
+$ git log
+commit 4985b64b2c0c80be31b9a0d18fe2ab8d9696c59c (HEAD -> myBranch)
+Author: DanceForEveryone <ashmitarakshit@22.gmail.com>
+Date:   Thu Apr 22 16:56:11 2021 +0530
+
+    my first commit at myBranch
+
+commit 3a16337ae585cbaf475e069007ac164a6818b290 (master)
+Author: DanceForEveryone <ashmitarakshit@22.gmail.com>
+Date:   Thu Apr 22 16:45:33 2021 +0530
+
+    my second commit
+
+commit 4ba57dfcf13a019205a560b6977f31e02999394e
+Author: DanceForEveryone <ashmitarakshit@22.gmail.com>
+Date:   Thu Apr 22 16:42:30 2021 +0530
+
+    my first commit
+
+AKR's@AKR-PC MINGW64 /c/WhiteHatJr/class67 (myBranch)
+$ git diff master myBranch
+diff --git a/story.txt b/story.txt
+index 036f34d..4fc59ed 100644
+--- a/story.txt
++++ b/story.txt
+@@ -1,3 +1,7 @@
+ Once upon a time, a clever monkey lived in a tree that bore juicy, red rose apples. He was very happy. One fine day, a crocodile swam up to that tree and told the monkey that he had traveled a long distance and was in search of food as he was very hungry. The kind monkey offered him a few rose apples. The crocodile enjoyed them very much and asked the monkey whether he could come again for some more fruit. The generous monkey happily agreed.
+
+-The crocodile returned the next day. And the next. And the next one after that. Soon the two became very good friends. They discussed their lives, their friends and family, like all friends do. The crocodile told the monkey that he had a wife and that they lived on the other side of the river. So the kind monkey offered him some extra rose apples to take home to his wife. The crocodile’s wife loved the rose apples and made her husband promise to get her some every day.
+\ No newline at end of file
++The crocodile returned the next day. And the next. And the next one after that. Soon the two became very good friends. They discussed their lives, their friends and family, like all friends do. The crocodile told the monkey that he had a wife and that they lived on the other side of the river. So the kind monkey offered him some extra rose apples to take home to his wife. The crocodile’s wife loved the rose apples and made her husband promise to get her some every day.
++
++Meanwhile, the friendship between the monkey and the crocodile deepened as they spent more and more time together. The crocodile’s wife started getting jealous. She wanted to put an end to this friendship. So she pretended that she could not believe that her husband could be friends with a monkey. Her husband tried to convince her that he and the monkey shared a true friendship. The crocodile’s wife thought to herself that if the monkey lived on a diet of rose monkeys, his flesh would be very sweet. So she asked the crocodile to invite the monkey to their house.
++
++The crocodile was not happy about this. He tried to make the excuse that it would be difficult to get the monkey across the river. But his wife was determined to eat the monkey’s flesh. So she thought of a plan. One day, she pretended to be very ill and told the crocodile that the doctor said that she would only recover if she ate a monkey’s heart. If her husband wanted to save her life, he must bring her his friend’s heart.
+\ No newline at end of file
+
+AKR's@AKR-PC MINGW64 /c/WhiteHatJr/class67 (myBranch)
+$ git remote add Class26 https://github.com/DanceForEveryone/Class67.git
+
+AKR's@AKR-PC MINGW64 /c/WhiteHatJr/class67 (myBranch)
+$ git push -u https://github.com/DanceForEveryone/Class67.git
+fatal: The current branch myBranch has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream https://github.com/DanceForEveryone/Class67.git myBranch
+
+
+AKR's@AKR-PC MINGW64 /c/WhiteHatJr/class67 (myBranch)
+$
+
+AKR's@AKR-PC MINGW64 /c/WhiteHatJr/class67 (myBranch)
+$ git push --set-upstream https://github.com/DanceForEveryone/Class67.git myBranch
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (11/11), 2.08 KiB | 425.00 KiB/s, done.
+Total 11 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), done.
+To https://github.com/DanceForEveryone/Class67.git
+ * [new branch]      myBranch -> myBranch
+Branch 'myBranch' set up to track remote branch 'myBranch' from 'https://github.com/DanceForEveryone/Class67.git'.
+
+AKR's@AKR-PC MINGW64 /c/WhiteHatJr/class67 (myBranch)
+$
